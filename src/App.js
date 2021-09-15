@@ -16,8 +16,8 @@ function App() {
 
    //use EFFECT
    useEffect(() => {
-     console.log("hey");
-   }, [todos]);
+     filterHandler();
+   }, [todos, status]);
 
   //  //use Effect
   //  useEffect() => {
@@ -33,7 +33,7 @@ function App() {
         setFilteredTodos(todos.filter((todo)  => todo.completed === false));
         break;
        default:
-          setFilteredTodos(todos):
+          setFilteredTodos(todos);
           break;
 
       }
