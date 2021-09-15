@@ -9,14 +9,21 @@ import TodoList from "./Components/TodoList";
 
 function App() {
    const [inputText, setInputText] = useState("");
-
+   const [todos, setTodos] = useState([]);
+   const [status, setStatus] = useState("all");
   return (
     <div className="App">
       <header>
        <h1>Chani's To do List</h1> 
        </header>
-       <Form />
-       <TodoList />
+       <Form 
+       inputText={inputText}
+       todos ={todos} 
+       setTodos={setTodos} 
+       setInputText={setInputText}
+        />
+       <TodoList setTodos={setTodos} todos={todos}
+       />
     </div>
   );
 }
