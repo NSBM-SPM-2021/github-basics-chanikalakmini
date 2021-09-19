@@ -1,7 +1,7 @@
 import React , {useState,useEffect }  from "react";
 import "./App.css";
 //importing Components
-import Form from "./Components/form";
+import Form from "./Components/Form";
 import TodoList from "./Components/TodoList";
 
 
@@ -16,7 +16,7 @@ function App() {
 
    //use EFFECT
    useEffect(() => {
-     filterHandler = () => {} ;
+     filterHandler();
    }, [todos, status]);
 
   //  //use Effect
