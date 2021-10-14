@@ -1,7 +1,7 @@
 import React , {useState,useEffect }  from "react";
 import "./App.css";
 //importing Components
-import Form from "./Components/Form";
+import Form from "./Components/form";
 import TodoList from "./Components/TodoList";
 
 
