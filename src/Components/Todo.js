@@ -17,9 +17,10 @@
            })
            );
          };
+
      return(
          <tr>
-             <td style={{backgroundColor:"white",color:"black"}}><li className={'todo-item ${todo.completed? "completed" : ""}'} >{ text.toUpperCase() }</li></td>
+             <td style={{backgroundColor:"white",color:"black"}}><li className={`todo-item ${todo.completed? "completed" : ""}`} >{ text.toUpperCase() }</li></td>
              <td>
              <button onClick={completeHandler } className="complete-btn"> 
                     <i className="fas fa-check"></i>

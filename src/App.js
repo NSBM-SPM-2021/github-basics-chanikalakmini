@@ -17,6 +17,7 @@ function App() {
    //use EFFECT
    useEffect(() => {
      filterHandler();
+     // eslint-disable-next-line
    }, [todos, status]);
 
   //  //use Effect
@@ -40,9 +41,11 @@ function App() {
       }
    };
    //save to Local
+   // eslint-disable-next-line
    const saveLocalTodos = () => {
      localStorage.setItem("todos", JSON.stringify(todos));
    };
+   // eslint-disable-next-line
    const getLocalTodos = () => {
      if(localStorage.getItem('todos') ===null) {
        localStorage.setItem('todos', JSON.stringify([]));
